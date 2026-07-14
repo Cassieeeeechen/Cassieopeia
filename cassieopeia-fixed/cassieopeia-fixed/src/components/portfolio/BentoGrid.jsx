@@ -126,21 +126,7 @@ const items = [
 ];
 
 const moreItems = [
-  { id: 20, title: 'JINYI Cinema IMAX Advertising', category: 'Outdoor Advertising', year: '2025', image: 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/ea6065532_IMG_5375.jpg', span: 'col-span-2 row-span-1', textSize: 'text-xl' },
   { id: 13, title: 'Forme Editorial', category: 'AI-enhanced Design', year: '2025', image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80', span: 'col-span-2 row-span-1', textSize: 'text-xl' },
-  { id: 18, title: 'JINYI Cinema Billboard - Variant', category: 'Outdoor Advertising', year: '2025', image: 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/3653f0644_-78x108cmh.jpg', span: 'col-span-1 row-span-1', textSize: 'text-lg' },
-  { id: 19, title: 'JINYI Cinema Billboard - Final', category: 'Outdoor Advertising', year: '2025', image: 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/a45b3498e_.jpg', span: 'col-span-1 row-span-1', textSize: 'text-lg' },
-  { id: 14, title: 'Urban Mural Project', category: 'Brand', year: '2025', image: 'https://images.unsplash.com/photo-1551913902-c92207136625?w=800&q=80', span: 'col-span-2 row-span-1', textSize: 'text-xl' },
-  { id: 15, title: 'Editorial Photography', category: 'UI/UX', year: '2025', image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&q=80', span: 'col-span-1 row-span-2', textSize: 'text-xl' },
-  { id: 16, title: 'The Creative Pulse Podcast', category: 'AI-enhanced Design', year: '2024', image: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&q=80', span: 'col-span-1 row-span-1', textSize: 'text-lg' },
-  { id: 17, title: 'Bloom Events Experience', category: 'Brand', year: '2024', image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80', span: 'col-span-1 row-span-1', textSize: 'text-lg' },
-  { id: 18, title: 'The Little Cloud Book', category: 'UI/UX', year: '2024', image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&q=80', span: 'col-span-1 row-span-1', textSize: 'text-lg' },
-  { id: 19, title: 'Veil Typography System', category: 'Brand', year: '2025', image: 'https://images.unsplash.com/photo-1471666875520-c75081f42081?w=800&q=80', span: 'col-span-1 row-span-1', textSize: 'text-lg' },
-  { id: 20, title: 'Botanica Visual Identity', category: 'Brand', year: '2025', image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80', span: 'col-span-1 row-span-2', textSize: 'text-xl' },
-  { id: 21, title: 'Nuage Web Experience', category: 'AI-enhanced Design', year: '2025', image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80', span: 'col-span-2 row-span-1', textSize: 'text-xl' },
-  { id: 22, title: 'Obsidian Packaging', category: 'UI/UX', year: '2023', image: 'https://images.unsplash.com/photo-1612532275214-e4ca76d0e4d1?w=800&q=80', span: 'col-span-1 row-span-1', textSize: 'text-lg' },
-  { id: 23, title: 'Prism Motion Reel', category: 'AI-enhanced Design', year: '2023', image: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800&q=80', span: 'col-span-1 row-span-1', textSize: 'text-lg' },
-  { id: 24, title: 'Solstice Campaign', category: 'Brand', year: '2023', image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80', span: 'col-span-1 row-span-1', textSize: 'text-lg' },
 ];
 
 const allItems = [...items, ...moreItems];
