@@ -7,6 +7,24 @@ import { categoryLabelsZh, titleLabelsZh } from '@/lib/projectTranslations';
 
 const items = [
   {
+    id: 0,
+    title: 'The Matcha Ritual',
+    category: 'Brand',
+    year: '2025',
+    image: 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/fe920e18c_MatchaAtrium.png',
+    span: 'col-span-3 row-span-1',
+    textSize: 'text-2xl'
+  },
+  {
+    id: 70,
+    title: 'China Southern Power Grid — Billboard KV',
+    category: 'Outdoor Advertising',
+    year: '2025',
+    image: '/images/powergrid/powergrid-01.png',
+    span: 'col-span-2 row-span-2',
+    textSize: 'text-2xl'
+  },
+  {
     id: 60,
     title: 'Santa Dance',
     category: 'Illustration',
@@ -49,15 +67,6 @@ const items = [
     year: '2025',
     image: '/images/artinus/artinus-branding.jpg',
     span: 'col-span-2 row-span-2',
-    textSize: 'text-2xl'
-  },
-  {
-    id: 0,
-    title: 'The Matcha Ritual',
-    category: 'Brand',
-    year: '2025',
-    image: 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/fe920e18c_MatchaAtrium.png',
-    span: 'col-span-3 row-span-1',
     textSize: 'text-2xl'
   },
   {
@@ -126,7 +135,10 @@ const items = [
 ];
 
 const moreItems = [
+  { id: 20, title: 'JINYI Cinema IMAX Advertising', category: 'Outdoor Advertising', year: '2025', image: 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/ea6065532_IMG_5375.jpg', span: 'col-span-2 row-span-1', textSize: 'text-xl' },
   { id: 13, title: 'Forme Editorial', category: 'AI-enhanced Design', year: '2025', image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80', span: 'col-span-2 row-span-1', textSize: 'text-xl' },
+  { id: 18, title: 'JINYI Cinema Billboard - Variant', category: 'Outdoor Advertising', year: '2025', image: 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/3653f0644_-78x108cmh.jpg', span: 'col-span-1 row-span-1', textSize: 'text-lg' },
+  { id: 19, title: 'JINYI Cinema Billboard - Final', category: 'Outdoor Advertising', year: '2025', image: 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/a45b3498e_.jpg', span: 'col-span-1 row-span-1', textSize: 'text-lg' },
 ];
 
 const allItems = [...items, ...moreItems];

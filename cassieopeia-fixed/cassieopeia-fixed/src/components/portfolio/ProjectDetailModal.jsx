@@ -103,6 +103,7 @@ export default function ProjectDetailModal({ project, onClose }) {
 
   const getGalleryImages = () => {
     if (!project) return [];
+    if (project.id === 70) return ['/images/powergrid/powergrid-01.png', '/images/powergrid/powergrid-02.png'];
     if (project.id === 60) return ['/images/santadance/santadance-01.jpg'];
     if (project.id === 61) return ['/images/friendlywithnature/fwn-01.jpg'];
     if (project.id === 62) return ['/images/littlegirl/littlegirl-01.jpg'];
@@ -253,7 +254,7 @@ export default function ProjectDetailModal({ project, onClose }) {
           
             <div className="relative w-full" style={{ height: '70vh', minHeight: 400 }}>
               <img
-              src={project.id === 4 ? 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/961b66020_159-1080x1920px.jpg' : project.id === 6 ? 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/3cb84c1b2_.jpg' : project.id === 25 ? 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/2e993e149_blueponsbusniess21.jpg' : project.id === 50 ? '/images/artinus/artinus-branding.jpg' : project.id === 60 ? '/images/santadance/santadance-01.jpg' : project.id === 61 ? '/images/friendlywithnature/fwn-01.jpg' : project.id === 62 ? '/images/littlegirl/littlegirl-01.jpg' : project.id === 63 ? '/images/mothersday/mothersday-01.jpg' : project.image}
+              src={project.id === 4 ? 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/961b66020_159-1080x1920px.jpg' : project.id === 6 ? 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/3cb84c1b2_.jpg' : project.id === 25 ? 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/2e993e149_blueponsbusniess21.jpg' : project.id === 50 ? '/images/artinus/artinus-branding.jpg' : project.id === 70 ? '/images/powergrid/powergrid-01.png' : project.id === 60 ? '/images/santadance/santadance-01.jpg' : project.id === 61 ? '/images/friendlywithnature/fwn-01.jpg' : project.id === 62 ? '/images/littlegirl/littlegirl-01.jpg' : project.id === 63 ? '/images/mothersday/mothersday-01.jpg' : project.image}
               alt={project.title}
               className="w-full h-full object-cover"
               style={project.id === 4 ? { objectPosition: 'center 85%' } : {}} />
@@ -283,8 +284,8 @@ export default function ProjectDetailModal({ project, onClose }) {
             className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-16 border-b border-gray-100">
             
               {(() => {
-                const enScope = project.id === 0 ? 'Commercial Photography' : project.id === 1 ? 'Full Brand Identity' : project.id === 5 ? 'Children\'s Picture Book Design' : project.id === 6 ? 'Digital Card System' : (project.id === 2 || project.id === 12 || project.id === 13) ? 'Outdoor Billboard Campaign' : project.id === 25 ? 'Brand Identity · Print' : project.id === 50 ? 'Commercial Photography · E-commerce Design' : project.id === 60 ? 'Illustration · Product Application' : project.id === 61 ? 'Illustration · Packaging Design' : project.id === 62 ? 'Story Illustration' : project.id === 63 ? 'Festive Campaign Illustration' : 'Full Identity';
-                const enDeliverables = project.id === 0 ? 'Visual Design · AI Enhanced' : project.id === 1 ? 'Photography · Print · Digital · UI · Outdoor' : project.id === 5 ? 'Illustration · Book Layout · Bilingual Design · Print Production' : project.id === 6 ? 'Card Design · Digital Wallet Assets · Multiple Formats' : (project.id === 2 || project.id === 12 || project.id === 13) ? 'Billboard Design · Multiple Formats · Motion Concept' : project.id === 25 ? 'Logo Design · Business Card · Brand Guidelines' : project.id === 50 ? 'Product Photography · Posters · Taobao Main Images · Detail Pages' : project.id === 60 ? 'Character Illustration · Sleep Mask Print Application' : project.id === 61 ? 'Character Illustration · Puzzle & Packaging Design' : project.id === 62 ? 'Character Illustration · Print' : project.id === 63 ? 'Illustration · Social Poster · Print' : 'Brand System';
+                const enScope = project.id === 0 ? 'Commercial Photography' : project.id === 1 ? 'Full Brand Identity' : project.id === 5 ? 'Children\'s Picture Book Design' : project.id === 6 ? 'Digital Card System' : (project.id === 2 || project.id === 12 || project.id === 13) ? 'Outdoor Billboard Campaign' : project.id === 25 ? 'Brand Identity · Print' : project.id === 50 ? 'Commercial Photography · E-commerce Design' : project.id === 70 ? 'Outdoor Billboard KV Design' : project.id === 60 ? 'Illustration · Product Application' : project.id === 61 ? 'Illustration · Packaging Design' : project.id === 62 ? 'Story Illustration' : project.id === 63 ? 'Festive Campaign Illustration' : 'Full Identity';
+                const enDeliverables = project.id === 0 ? 'Visual Design · AI Enhanced' : project.id === 1 ? 'Photography · Print · Digital · UI · Outdoor' : project.id === 5 ? 'Illustration · Book Layout · Bilingual Design · Print Production' : project.id === 6 ? 'Card Design · Digital Wallet Assets · Multiple Formats' : (project.id === 2 || project.id === 12 || project.id === 13) ? 'Billboard Design · Multiple Formats · Motion Concept' : project.id === 25 ? 'Logo Design · Business Card · Brand Guidelines' : project.id === 50 ? 'Product Photography · Posters · Taobao Main Images · Detail Pages' : project.id === 70 ? 'KV Design · Icon System · Multi-city Billboard Extension' : project.id === 60 ? 'Character Illustration · Sleep Mask Print Application' : project.id === 61 ? 'Character Illustration · Puzzle & Packaging Design' : project.id === 62 ? 'Character Illustration · Print' : project.id === 63 ? 'Illustration · Social Poster · Print' : 'Brand System';
                 const zhEntry = projectContentZh[project.id];
                 const metaItems = [
                   { label: language === 'zh' ? '类别' : 'Category', value: language === 'zh' ? (categoryLabelsZh[project.category] || project.category) : project.category },
@@ -325,6 +326,8 @@ export default function ProjectDetailModal({ project, onClose }) {
               'An outdoor billboard campaign for JINYI Cinema\'s laser projection technology service. The design balances cinematic elegance with dynamic energy—featuring flowing iridescent gradients, bold typography, and light effects that translate the immersive theater experience to the urban landscape.' :
               project.id === 50 ?
               'A full commercial photography and e-commerce design collaboration for ARTINUS, a Korean outdoor fishing apparel brand expanding into overseas markets. Working alongside a co-designer, the project spanned product photography, poster design, and complete Taobao storefront assets — including main product images and detail pages for the brand\'s technical outerwear and accessories collection.' :
+              project.id === 70 ?
+              'A key visual (KV) and billboard design project for China Southern Power Grid — Guangdong Power Grid. Responsible for the main KV design and its extension across other cities in the province (including Foshan, Dongguan, Zhuhai), along with a supporting icon system. Two campaign directions were developed, each translating the utility\'s service improvements into a bold, cinematic cityscape visual.' :
               project.id === 60 ?
               '《Santa Dance》is a self-practice character illustration inspired by a dancer I admire, capturing a moment of playful movement. The piece was applied to a physical sleep mask product to demonstrate how the illustration translates into a real, tactile item.' :
               project.id === 61 ?
@@ -688,6 +691,54 @@ export default function ProjectDetailModal({ project, onClose }) {
                   </div>
                 </motion.div>
               ))
+              ) : project.id === 70 ? (
+              [
+                {
+                  phase: '01 — Concept Direction A',
+                  title: 'Service Improvement, Visualized',
+                  body: 'Developed the primary KV concept translating Guangdong Power Grid\'s "Five Precisions, Five News" service upgrades into a bold cityscape visual — using bandage-like light trails and icon callouts to represent smoother, faster, more precise service across the Guangzhou skyline.',
+                  image: '/images/powergrid/powergrid-01.png',
+                  imageAlt: 'China Southern Power Grid KV — Direction A',
+                  layout: 'image-right'
+                },
+                {
+                  phase: '02 — Concept Direction B',
+                  title: 'A Cleaner, More Confident Statement',
+                  body: 'A second direction pushed toward a more refined, confident tone — pairing "Optimizing the Business Environment, Guangdong Power at Full Strength" with a cleaner golden skyline treatment and a WeChat QR code for the utility\'s service account, extending the system into a functional, campaign-ready billboard.',
+                  image: '/images/powergrid/powergrid-02.png',
+                  imageAlt: 'China Southern Power Grid KV — Direction B',
+                  layout: 'image-left'
+                }
+              ].map((step, i) => (
+              <motion.div
+              key={step.phase}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className={`flex flex-col ${step.layout === 'image-right' ? 'md:flex-row' : 'md:flex-row-reverse'} gap-12 md:gap-16 items-center`}>
+
+                  <div className="flex-1 space-y-5">
+                    <p className="text-[10px] font-medium tracking-[0.4em] uppercase text-purple-400">{step.phase}</p>
+                    <h3 className="text-2xl md:text-3xl font-extralight text-gray-900 tracking-tight leading-snug">
+                      {step.title}
+                    </h3>
+                    <p className="text-[15px] font-light text-gray-500 leading-relaxed max-w-sm">
+                      {step.body}
+                    </p>
+                  </div>
+
+                  <div className="flex-1 w-full">
+                    <div className="relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-50">
+                      <img
+                    src={step.image}
+                    alt={step.imageAlt}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out" />
+
+                    </div>
+                  </div>
+                </motion.div>
+              ))
               ) : project.id === 50 ? (
               translateSteps([
                 {
@@ -806,6 +857,9 @@ export default function ProjectDetailModal({ project, onClose }) {
                 project.id === 50 ? [
                 '/images/artinus/artinus-branding.jpg',
                 '/images/artinus/artinus-ecommerce.jpg'] :
+                project.id === 70 ? [
+                '/images/powergrid/powergrid-01.png',
+                '/images/powergrid/powergrid-02.png'] :
                 project.id === 5 ? [
                 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/83af35d74_01.jpg',
                 'https://media.base44.com/images/public/69ad44f7d817e6a3f2fc7781/6e734f31f_02.jpg',

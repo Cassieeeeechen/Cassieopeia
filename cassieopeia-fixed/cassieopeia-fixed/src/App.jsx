@@ -7,6 +7,7 @@ import PageNotFound from './lib/PageNotFound';
 import { ThemeProvider } from '@/lib/ThemeContext';
 import { LanguageProvider } from '@/lib/LanguageContext';
 import LanguageToggle from '@/components/portfolio/LanguageToggle';
+import IridescentCursor from '@/components/portfolio/IridescentCursor';
 
 const { Pages, Layout, mainPage } = pagesConfig;
 const mainPageKey = mainPage ?? Object.keys(Pages)[0];
@@ -52,6 +53,7 @@ function App() {
           </Router>
           <Toaster />
           <LanguageToggle />
+          <IridescentCursor />
         </QueryClientProvider>
       </LanguageProvider>
     </ThemeProvider>
